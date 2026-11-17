@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка студента - Бутырев Артур</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo">
+            <a href="#about">Бутырев Артур</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="about" class="hero">
+        <div class="container">
+            <img src="img/profile.jpg" alt="Ваше фото" class="profile-img">
+            <h2>Привет, я Артур</h2>
+            <h3>Студент направления "Прикладная информатика", 1 курс</h3>
+            <p>
+                Студент-первокурсник, направление «Прикладная информатика».
+                Интересуюсь веб-разработкой: верстаю на HTML и CSS, изучаю Python
+                и базы данных. Опыта пока немного, зато есть желание разобраться
+                в теме по-настоящему. Хочу к концу первого курса собрать свой
+                небольшой проект и выложить его на GitHub.
+            </p>
+            <a href="#contact" class="btn">Связаться со мной</a>
+        </div>
+    </section>
+
+    <section id="education" class="section-padding">
+        <div class="container">
+            <h2>Моё образование</h2>
+
+
+            <div class="education-item">
+            <h3>Академия маркетинга и социально-информационных технологий</h3>
+            <p><strong>Уровень:</strong> Высшее образование — бакалавриат</p>
+            <p><strong>Направление:</strong> Прикладная информатика</p>
+            <p><strong>Курс:</strong> 1 курс (2026 — 2030)</p>
+            <p>
+                Изучаю основы программирования, базы данных, веб-разработку
+                и информационные системы. В планах — углублённое изучение
+                Python, SQL и frontend-разработки.
+            </p>
+        </div>
+
+            <div class="education-item">
+                <h3>Академия маркетинга и социально-информационных технологий</h3>
+                <p>Направление: Информационные системы и программирование</p>
+                <p>Годы обучения: 2023 - 2026</p>
+                <p>Краткое описание достижений или интересных курсов.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2>Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 (Flexbox, Grid)</li>
+                        <li>JavaScript (основы)</li>
+                        <li>React / Vue / Angular (если изучаете)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python / Node.js / PHP (если изучаете)</li>
+                        <li>SQL / NoSQL (базы данных)</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Дизайн и инструменты</h3>
+                    <ul>
+                        <li>Figma / Adobe XD</li>
+                        <li>Responsive Design</li>
+                        <li>Git / GitHub</li>
+                        <li>Graphic Design (основы)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="https://placehold.it/300x200" alt="Проект 1">
+                    <h3>Название проекта 1</h3>
+                    <p>Краткое описание проекта, использованные технологии.</p>
+                    <a href="#" target="_blank" class="btn btn-small">Посмотреть проект</a>
+                </div>
+                <div class="project-item">
+                    <img src="https://placehold.it/300x200" alt="Проект 2">
+                    <h3>Название проекта 2</h3>
+                    <p>Краткое описание проекта, использованные технологии.</p>
+                    <a href="#" target="_blank" class="btn btn-small">Посмотреть проект</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <h2>Связаться со мной</h2>
+            <p>Буду рад пообщаться по поводу сотрудничества или интересных проектов.</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank" title="GitHub">
+                    <img src="img/github-icon.png" alt="GitHub">
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <img src="img/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="#" target="_blank" title="Telegram">
+                    <img src="img/telegram-icon.jpg" alt="Telegram">
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Артур. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
